@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 8</title>
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	html {
+            scroll-behavior: smooth;
+        }
+	.container{
+		width: 1320px;
+		margin:10px auto;
+		padding: 10px;
+	}
+	.header{
+		position: fixed;
+		top: 0;
+		width:100%;
+		height: 110px;
+		background-color: grey;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		color:white;
+		z-index: 1;
+	}
+	.banner{
+		width:100%;
+		height: 650px;
+		background-color: lightblue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 100px 0 20px 0;
+		font-size: 40px;
+		color: white;
+		position: relative;
+	}
+	h1{
+		text-align: center;
+		font-size: 45px;
+		margin:10px;
+	}
+	.section-1{
+		display: flex;
+		justify-content: center;
+	}
+	.c1{
+		width: 270px;
+		height: 270px;
+		border-radius: 50%;
+		background-color: yellow;
+		float:left;
+		margin: 20px;
+	}
+	.section-2::after{
+		content: '';
+		display:block;
+		clear: both;
+	}
+	.main-left{
+		width:50%;
+		height: 600px;
+		background-color: grey;
+		display: flex;
+		color: white;
+		float:left;
+		margin: 20px 0 20px 0;
+		position: relative;
+	}
+	.right-side{
+		width: 48.5%;
+		float: right;
+	}
+	.a1{
+		background-color: orange;
+		width:100%;
+		height:186px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		color: black;
+		float:right;
+		margin-top: 20px;
+		position: relative;
+	}
+	.section-3{
+		display: flex;
+		justify-content: center;
+	}
+	.s1{
+		width: 265px;
+		height: 100%;
+		background-color: lightblue;
+		float:left;
+		margin: 20px;
+		padding: 10px;
+		border-radius: 5px;
+	}
+	.footer{
+		width:1310px;
+		height: 110px;
+		background-color: purple;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		color:white;
+		margin: 20px auto 0 auto;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+	ul li{
+		display: inline-block;
+	}
+	ul li a{
+		display: block;
+		text-decoration: none;
+		color: white;
+		padding: 15px 30px;
+		font-weight: bold;
+	}
+	ul li a:hover{
+		background-color: white;
+		color:black;
+	}
+	div a{
+		color: white;
+	}
+	#cir1, #cir2, #cir3, #cir4{
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+	}
+	div img{
+		width: 100%;
+		height: 100%;
+	}
+	#card{
+		width: 100%;
+		height: 100px;
+	}
+	.s1 a{
+		display: block;
+		background-color: red;
+		border-radius: 5px;
+		text-decoration: none;
+		margin-top: 5px;
+		padding: 5px;
+		text-align: center;
+	}
+	.s1 a:hover{
+		background-color: blue;
+	}
+	.banner h1{
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
+	.main-left h2{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		font-size: 35px;
+	}
+	.main-left p{
+		position: absolute;
+		top: 65px;
+		left: 5px;
+		font-size: 25px;
+	}
+	.a1 h3{
+		position: absolute;
+		top: 5px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#about_us">ABOUT US</a></li>
+				<li><a href="#team">TEAM</a></li>
+				<li><a href="#techno">TECHNOLOGIES</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+		<br id="footer">
+		<div class="banner"><img src="banner.jpg">
+			<h1>PRACTICAL-8</h1>
+		</div>
+		<br id="team"><br><br><br><br><br><br>
+		<h1>Team Members</h1>
+		<div class="section-1">
+			<div class="c1"><img src="girl1.png" id="cir1"></div>
+			<div class="c1"><img src="girl1.png" id="cir2"></div>
+			<div class="c1"><img src="girl1.png" id="cir3"></div>
+			<div class="c1"><img src="girl1.png" id="cir4"></div>
+		</div>
+		<br id="about_us"><br><br><br><br><br><br>
+		<h1>About Us</h1>
+		<div class="section-2">
+			<div class="main-left">
+				<h2>About Projects</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliq.</p>
+			</div>
+			<div class="right-side">
+				<div class="a1"><img src="pro.jpg"><h3>Project-1</h3></div>
+				<div class="a1"><img src="proj.jpeg"><h3>Project-2</h3></div>
+				<div class="a1"><img src="proje.jpg"><h3>Project-3</h3></div>
+			</div>
+		</div>
+		<br id="techno"><br><br><br><br><br><br>
+		<h1>Technologies Used</h1>
+		<div class="section-3">
+			<div class="s1"><img src="html.png" id="card">
+				<h3 style="text-align: center; margin: 5px;">Introduction to HTML</h3>
+				<p>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.</p>
+				<a href="html.html">Read More</a>
+			</div>
+
+			<div class="s1"><img src="css.png" id="card">
+				<h3 style="text-align: center; margin: 5px;">Introduction to CSS</h3>
+				<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.CSS is designed to enable the separation of presentation.</p>
+				<a href="css.html">Read More</a>
+			</div>
+
+			<div class="s1"><img src="javascript-.png" id="card">
+				<h3 style="text-align: center;margin: 5px;">Introduction to Javascript</h3>
+				<p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+				<a href="javascript.html">Read More</a>
+			</div>
+
+			<div class="s1"><img src="bootstarp.png" id="card">
+				<h3 style="text-align: center; margin: 5px;">Introduction to Bootstrap</h3>
+				<p>Bootstrap is a web framework that focuses on simplifying the development of informative web pages. The primary purpose of adding it is to apply bootstrap's choices of color, size, font and layout. Bootstrap also comes with several JavaScript components in the form of jQuery plugins.</p>
+				<a href="bootstrap.html">Read More</a>
+			</div>
+
+			</div>
+		</div>
+		<br id="contact"><br><br><br><br><br>
+		<h1>Contact</h1>
+		<div class="footer"><a href="#footer">Back to top</a></div>
+	</div>
+</body>
+</html>
