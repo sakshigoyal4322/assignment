@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical - 14</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+}
+
+header h1 { 
+    font-size: 60px;
+    color: red;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.templates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;    
+    margin-top: 60px;
+}
+
+.form1 {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+    width: 300px;
+    height: 350px;
+}
+
+.header1 {
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, orange, tomato);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.header1 h3 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.icon1 i {
+    padding: 15px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container1 {
+    padding: 20px;
+}
+
+input[type=text] {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    padding: 10px 0px;  
+    margin: 5px 0px;
+}
+
+.container1 p {
+    text-align: right;
+    font-size: 11px;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    color: rgb(94, 94, 94);
+}
+
+.container1 p b {
+    color: black;
+}
+
+.container1 input[type=submit] {
+    background-color: rgb(155, 155, 155);
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.container1 input[type=submit]:hover {
+    background: linear-gradient(to right, rgba(255, 124, 47, 0.767), tomato);
+    cursor: pointer;
+}
+
+#p1 {
+    float: right;
+}
+
+.form2 {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+    width: 300px;
+    height: 350px;
+}
+
+.header2 h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(255, 0, 191);
+}
+
+.container2 {
+    padding: 20px;
+}
+
+input[type=checkbox] {
+    margin-top: 15px;
+}
+
+.container2 p {
+    color: rgb(94, 94, 94);
+    font-size: 11px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.container2 p b {
+    color: rgb(0, 191, 255);
+}
+
+.container2 #p2 {
+    margin-left: 40px;
+}
+
+.container2 input[type=submit] {
+    background-color: rgb(255, 0, 191);
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.container2 input[type=submit]:hover {
+    background-color: rgb(0, 191, 255);
+    cursor: pointer;
+}
+
+.footer2 {
+    background-color: rgb(103, 107, 107);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon2 i {
+    margin: 0px 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.form3 {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+    width: 300px;
+    height: 350px;
+}
+
+.header3 h3 {
+    padding-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.container3  {
+    padding: 20px;
+}
+
+.container3 p {
+    font-size: 12px;
+}
+
+.container3 #p3 {
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: rgb(0, 191, 255);
+}
+
+.container3 input[type=submit] {
+    background: linear-gradient(to right, rgb(7, 197, 255), rgb(0, 140, 255));
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: none;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.container3 input[type=submit]:hover {
+    background: linear-gradient(to right, rgb(53, 53, 53), rgb(0, 0, 0));
+    color: white;
+    cursor: pointer;
+}
+
+.container3 p b {
+    color: rgb(0, 162, 255);
+}
+
+.container3 #p4 {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.footer3 {
+    display: flex;
+    flex-direction:3 row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon3 i {
+    background-color: #fff;
+    color: rgb(0, 162, 255);
+    padding: 10px 15px;
+    box-shadow: 0.5px 1px 3px 1px rgb(0, 162, 255);
+    border-radius: 20px;
+    width: 70px;
+    text-align: center;
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    body {
+        background-color: lightblue;
+    }
+    
+    header h1 { 
+        font-size: 60px;
+        color: red;
+        text-align: center;
+        margin: 20px;
+    
+    }
+    
+    .templates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;    
+        margin-top: 40px;
+    }
+    
+    .form1 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+    }
+    
+    .header1 {
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to right, rgba(255, 124, 47, 0.767), tomato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .header1 h3 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .icon1 i {
+        padding: 15px 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .container1 {
+        padding: 20px;
+    }
+    
+    input[type=text] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        padding: 10px 0px;  
+        margin: 5px 0px;
+    }
+    
+    .container1 p {
+        text-align: right;
+        font-size: 11px;
+        padding: 10px 0px;
+        margin-bottom: 30px;
+        color: rgb(94, 94, 94);
+    }
+    
+    .container1 p b {
+        color: black;
+    }
+    
+    .container1 input[type=submit] {
+        background-color: rgb(155, 155, 155);
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+    }
+    
+    .container1 input[type=submit]:hover {
+        background: linear-gradient(to right, rgba(255, 124, 47, 0.767), tomato);
+        cursor: pointer;
+    }
+    
+    #p1 {
+        float: right;
+    }
+    
+    .form2 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+    }
+    
+    .header2 h3 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(255, 0, 191);
+    }
+    
+    .container2 {
+        padding: 20px;
+    }
+    
+    input[type=checkbox] {
+        margin-top: 15px;
+    }
+    
+    .container2 p {
+        color: rgb(94, 94, 94);
+        font-size: 11px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .container2 p b {
+        color: rgb(0, 191, 255);
+    }
+    
+    .container2 #p2 {
+        margin-left: 40px;
+    }
+    
+    .container2 input[type=submit] {
+        background-color: rgb(255, 0, 191);
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+    }
+    
+    .container2 input[type=submit]:hover {
+        background-color: rgb(0, 191, 255);
+        cursor: pointer;
+    }
+    
+    .footer2 {
+        background-color: rgb(103, 107, 107);
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon2 i {
+        margin: 0px 15px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .form3 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .header3 h3 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+    
+    .container3  {
+        padding: 20px;
+    }
+    
+    .container3 p {
+        font-size: 12px;
+    }
+    
+    .container3 #p3 {
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(0, 191, 255);
+    }
+    
+    .container3 input[type=submit] {
+        background: linear-gradient(to right, rgb(7, 197, 255), rgb(0, 140, 255));
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    
+    .container3 input[type=submit]:hover {
+        background: linear-gradient(to right, rgb(53, 53, 53), rgb(0, 0, 0));
+        color: white;
+        cursor: pointer;
+    }
+    
+    .container3 p b {
+        color: rgb(0, 162, 255);
+    }
+    
+    .container3 #p4 {
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .footer3 {
+        display: flex;
+        flex-direction:3 row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .icon3 i {
+        background-color: #fff;
+        color: rgb(0, 162, 255);
+        padding: 10px 15px;
+        box-shadow: 0.5px 1px 3px 1px rgb(0, 162, 255);
+        border-radius: 20px;
+        width: 70px;
+        text-align: center;
+        font-size: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color:lightblue;
+        min-width: 400px;
+    }
+    
+    header h1 { 
+        font-size: 60px;
+        color: red;
+        text-align: center;
+        margin: 20px;
+    
+    }
+    
+    .templates {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;    
+        margin-top: 40px;
+    }
+    
+    .form1 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+    }
+    
+    .header1 {
+        width: 100%;
+        height: 100px;
+        background-image: linear-gradient(to right, rgba(255, 124, 47, 0.767), tomato);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+    
+    .header1 h3 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    
+    .icon1 i {
+        padding: 15px 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .container1 {
+        padding: 20px;
+    }
+    
+    input[type=text] {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid lightgray;
+        width: 100%;
+        padding: 10px 0px;  
+        margin: 5px 0px;
+    }
+    
+    .container1 p {
+        text-align: right;
+        font-size: 11px;
+        padding: 10px 0px;
+        margin-bottom: 30px;
+        color: rgb(94, 94, 94);
+    }
+    
+    .container1 p b {
+        color: black;
+    }
+    
+    .container1 input[type=submit] {
+        background-color: rgb(155, 155, 155);
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+    }
+    
+    .container1 input[type=submit]:hover {
+        background: linear-gradient(to right, rgba(255, 124, 47, 0.767), tomato);
+        cursor: pointer;
+    }
+    
+    #p1 {
+        float: right;
+    }
+    
+    .form2 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+        margin-top: 40px;
+    }
+    
+    .header2 h3 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: rgb(255, 0, 191);
+    }
+    
+    .container2 {
+        padding: 20px;
+    }
+    
+    input[type=checkbox] {
+        margin-top: 15px;
+    }
+    
+    .container2 p {
+        color: rgb(94, 94, 94);
+        font-size: 11px;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 25px;
+    }
+    
+    .container2 p b {
+        color: rgb(0, 191, 255);
+    }
+    
+    .container2 #p2 {
+        margin-left: 40px;
+    }
+    
+    .container2 input[type=submit] {
+        background-color: rgb(255, 0, 191);
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+    }
+    
+    .container2 input[type=submit]:hover {
+        background-color: rgb(0, 191, 255);
+        cursor: pointer;
+    }
+    
+    .footer2 {
+        background-color: rgb(103, 107, 107);
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon2 i {
+        margin: 0px 15px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .form3 {
+        background-color: #fff;
+        box-shadow: 5px 5px 5px 5px rgb(107, 104, 104);
+        width: 300px;
+        height: 350px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .header3 h3 {
+        padding-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        color: black;
+    }
+    
+    .container3  {
+        padding: 20px;
+    }
+    
+    .container3 p {
+        font-size: 12px;
+    }
+    
+    .container3 #p3 {
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(0, 191, 255);
+    }
+    
+    .container3 input[type=submit] {
+        background: linear-gradient(to right, rgb(7, 197, 255), rgb(0, 140, 255));
+        padding: 10px 15px;
+        border-radius: 20px;
+        box-shadow: none;
+        color: white;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        width: 100%;
+    }
+    
+    .container3 input[type=submit]:hover {
+        background: linear-gradient(to right, rgb(53, 53, 53), rgb(0, 0, 0));
+        color: white;
+        cursor: pointer;
+    }
+    
+    .container3 p b {
+        color: rgb(0, 162, 255);
+    }
+    
+    .container3 #p4 {
+        text-align: center;
+        margin: 10px 0px 0px 0px;
+    }
+    
+    .footer3 {
+        display: flex;
+        flex-direction:3 row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .icon3 i {
+        background-color: #fff;
+        color: rgb(0, 162, 255);
+        padding: 10px 15px;
+        box-shadow: 0.5px 1px 3px 1px rgb(0, 162, 255);
+        border-radius: 20px;
+        width: 70px;
+        text-align: center;
+        font-size: 17px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+    </style>
+</head>
+<body>
+    <header><h1>FORM TEMPLATES</h1></header>
+    <main>
+        <div class="templates">
+            <div class="form1">
+                <div class="header1">
+                <h3>Log in</h3>
+                <div class="icon1">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                </div>
+                </div>
+                <div class="container1">
+                    <div class="email">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="pwd">
+                        <input type="text" placeholder="Your Password">
+                    </div>
+                    <p>Forgot <b>Password?</b></p>
+                    <input type="submit" value="LOG IN">
+                    <p id="p1">Don't have an account? <b>Sign Up</b></p>
+                </div>
+            </div>
+            <div class="form2">
+                <div class="header2">
+                    <h3>Sign Up</h3>
+                </div>
+                <div class="container2">
+                    <div class="email">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="pwd">
+                        <input type="text" placeholder="Your Password">
+                    </div>
+                    <input type="checkbox">
+                    <p>Accept the <b>Terms and Conditions</b></p>
+                    <input type="submit" value="SIGN UP">
+                    <p id="p2">Have an account? <b>Log in</b></p>
+                </div>
+                <div class="footer2">
+                    <div class="icon2">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="form3">
+                <div class="header3">
+                    <h3>Sign In</h3>
+                </div>
+                <div class="container3">
+                    <div class="email">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="pwd">
+                        <input type="text" placeholder="Your Password">
+                    </div>
+                    <p id="p3">Forgot <b>Password?</b></p>
+                    <input type="submit" value="SIGN IN">
+                    <p id="p4">or Sign In with:</p>
+            </div>
+            <div class="footer3">
+                <div class="icon3">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
