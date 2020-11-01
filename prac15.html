@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        h1{
+            font-size: 55px;
+            color: blue;
+            text-align: center;
+        }
+        body{
+            background-color: #7cb9e8;
+        }
+        .outer{
+            display: flex;
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            justify-content: space-between;
+        }
+        #plus, #minus{
+            height: 70px;
+            width: 80px;
+            font-size: 45px;
+            background-color: #007fff;
+            outline: none;
+            border-radius: 10px;
+        }
+        #number{
+            font-size: 50px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1>COUNTER</h1>
+    <div class="outer">
+    <button id="minus">-</button>
+    <div id="number">0</div>
+    <button id="plus">+</button>
+    </div>
+    <script>
+        var num = document.getElementById("number");
+        var subt= document.getElementById("minus");
+        var add = document.getElementById("plus");
+
+        counter = 0;
+        if (counter == 0) {
+            subt.disabled = true;
+        }
+
+        add.onclick = function increase() {
+            num.innerHTML = ++counter;
+            if (counter > 0) {
+                subt.disabled = false;
+            } else {
+                subt.disabled = true;
+            }
+        }
+        
+        subt.onclick = function decrease() {
+            if (counter > 0) {
+                num.innerHTML = --counter;
+            }
+            if (counter > 0) {
+                subt.disabled = false;
+            } else {
+                subt.disabled = true;
+            }
+        }
+        
+    </script>
+</body>
+</html>
